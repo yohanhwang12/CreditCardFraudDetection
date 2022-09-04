@@ -1,6 +1,15 @@
-# SQL_Python_Mod7
-We use SQL and Python to analyze credit card transactions. We look for outliers and possible signs of fraud.
-This was originally an assignment for Northwestern's Fintech Bootcamp.
+# Credit Card Fraud Detection
+After data modeling, PostgreSQL, Python and Pandas are used to create a database and look for outliers to detect credit card fraud.
+## Getting Started
+This project was done on a Jupyter notebook, which means there is no need to run this as an "app". A Jupyter notebook contains python code and displays the results of the code on the same page when running on a local computer with all dependencies installed. But no need to install libraries. Just open up the ".ipynb" file in the repository and it shows the Python code with its immediate results.
+
+## Project Overview
+First a relationship was established from exploring various SQL files located in the Data folder. Relationships were found between the tables and a Quick Database Diagram was drawn:
+![Quick Database Diagram](Data/QuickDBD.png)
+
+Then the database was made using PostgreSQL. After that, data was pulled and analyzed using Python and Pandas. Cardholders 2 and 18 were especially found suspect. After plotting the data using hvplot, unusual spending was identified.
+
+
 
 ## Background
 Fraud is prevalent these days, whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
@@ -14,6 +23,9 @@ You are asked to accomplish three main tasks:
  Data Analysis: Analyze the data to identify possible fraudulent transactions trends data, and develop a report of your observations.
 
 ## Instructions
+
+
+
 ### Data Modeling
 Create an entity relationship diagram (ERD) by inspecting the provided CSV files. Part of the challenge here is to figure out how many tables you should create, as well as what kind of relationships you need to define among the tables. Feel free to discuss your database model design ideas with your classmates. You can use a tool like Quick Database Diagrams (Links to an external site.) to create your model.
 
